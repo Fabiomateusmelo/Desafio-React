@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.color-square {
+  width: 300px;
+  display: inline-block;
+  color: white;
+  padding: 40px;
+  margin: 10px;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode {
+  background-color: #171717;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  border: 1px solid white; 
+}
+
+.bordaCor {
+  border: 1px solid black;
+}
+
+.dark-mode-button {
+  border: 2px solid white;
+  color: white;
+  background-color: #171717;
+  cursor: pointer;
+}
+
+.light-mode-button {
+  border: 2px solid #171717;
+  color: #171717;
+  background-color: white;
+  cursor: pointer;
+}
+
+input,
+label {
+  font-size: 1rem;
+  display: block;
+  margin: 8px auto;
+  color: turquoise;
+  border-color: blueviolet;
+  border-width: 1px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border-style: solid;
+  background: #222222;
+}
+
+input:focus-visible {
+  outline: 2px solid #40e0d0;
+  border: 1px solid #40e0d0;
+}
+
+input[type='submit'] {
+  width: 100px;
+  background-color: blueviolet;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  width: 105px;
+  filter: brightness(1.1);
+}
+
+h4 {
+  color: blueviolet;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+input[placeholder] {
+  color: blueviolet;
+}
+
+form {
+  padding: 2rem;
+  background-color: #171717;
+}
+
+.dog-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.dog-pics img {
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+}
