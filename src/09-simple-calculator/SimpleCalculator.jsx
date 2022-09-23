@@ -3,7 +3,7 @@ import { useReducer } from 'react'
 const initialState = {
   num1: 0,
   num2: 0,
-  result: 'no result yet'
+  result: 'Nenhum resultado ainda'
 }
 
 function reducer (state, action) {
@@ -11,6 +11,8 @@ function reducer (state, action) {
   if (action.type === 'SET_NUM_TWO') return { ...state, num2: action.number }
   if (action.type === 'ADD') return { ...state, result: state.num1 + state.num2 }
   if (action.type === 'SUBTRACT') return { ...state, result: state.num1 - state.num2 }
+  if (action.type === 'VEZES') return { ...state, result: state.num1 * state.num2 }
+  if (action.type === 'DIVIDIR') return { ...state, result: state.num1 / state.num2 }
   if (action.type === 'CLEAR') return initialState
 }
 
@@ -21,7 +23,7 @@ export default function SimpleCalculator () {
   return (
     <div>
       <div>
-        <h2>Number 1</h2>
+        <h2>Primeiro Numero</h2>
         {numbers.map(number => (
           <button
             key={number}
@@ -31,7 +33,7 @@ export default function SimpleCalculator () {
           </button>))}
       </div>
       <div>
-        <h2>Number 2</h2>
+        <h2>Segundo Numero</h2>
         {numbers.map(number => (
           <button
             key={number}
@@ -44,7 +46,9 @@ export default function SimpleCalculator () {
         <h2>Actions</h2>
         <button onClick={() => dispatch({ type: 'ADD' })}>+</button>
         <button onClick={() => dispatch({ type: 'SUBTRACT' })}>-</button>
-        <button onClick={() => dispatch({ type: 'CLEAR' })}>c</button>
+        <button onClick={() => dispatch({ type: 'VEZES' })}>x</button>
+        <button onClick={() => dispatch({ type: 'DIVIDIR' })}>/</button>
+        <button onClick={() => dispatch({ type: 'CLEAR' })}>C</button>
       </div>
       <div>
         <h2>Result: {state.result}</h2>
