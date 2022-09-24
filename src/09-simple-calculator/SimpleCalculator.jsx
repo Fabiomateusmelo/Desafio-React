@@ -51,7 +51,7 @@ export default function SimpleCalculator () {
         <button onClick={() => dispatch({ type: 'CLEAR' })}>C</button>
       </div>
       <div>
-        <h2>Result: {state.result}</h2>
+        <h2>Resultado: {state.result}</h2>
       </div>
     </div>
   )
