@@ -130,3 +130,22 @@ form {
   height: 400px;
   object-fit: contain;
 }
+
+.items {
+  padding-left: 15px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.total {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  margin:0 5px;
+}
