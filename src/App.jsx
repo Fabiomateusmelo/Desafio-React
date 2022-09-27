@@ -13,6 +13,7 @@ import ShoppingCart from './11-shopping-cart/ShoppingCart'
 import ObjProps from './12-hooks/01-Desestruturacao'
 import UseState from './12-hooks/02-UseState'
 import CheckBox from './12-hooks/03-CheckBox'
+import Componente from './12-hooks/04-ComponentTrees'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <ObjProps name='Fábio' />
       <UseState />
       <CheckBox />
+      <Componente />
     </div>
   )
 }
