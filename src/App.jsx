@@ -10,8 +10,9 @@ import PixelArt from './08-pixel-art/PixelArt'
 import SimpleCalculator from './09-simple-calculator/SimpleCalculator'
 import FocusInput from './10-focus-input/FocusInput'
 import ShoppingCart from './11-shopping-cart/ShoppingCart'
-import ObjProps from './12-hooks/Desestruturacao'
-import UseState from './12-hooks/UseState'
+import ObjProps from './12-hooks/01-Desestruturacao'
+import UseState from './12-hooks/02-UseState'
+import CheckBox from './12-hooks/03-CheckBox'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <ShoppingCart />
       <ObjProps name='Fábio' />
       <UseState />
+      <CheckBox />
     </div>
   )
 }
