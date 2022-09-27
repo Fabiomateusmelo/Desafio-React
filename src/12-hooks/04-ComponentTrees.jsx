@@ -25,9 +25,9 @@ function StarRating({ totalStars }) {
           onSelect={() => setSelectedStars(i + 1)}
         />
       ))}
-      <p>
+      <h3>
         {selectedStars} de {totalStars}
-      </p>
+      </h3>
     </>
   )
 }
