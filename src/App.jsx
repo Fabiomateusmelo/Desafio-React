@@ -14,6 +14,7 @@ import ObjProps from './12-usestate/01-Desestruturacao'
 import UseState from './12-usestate/02-UseState'
 import CheckBox from './12-usestate/03-CheckBox'
 import Componente from './12-usestate/04-ComponentTrees'
+import UseEffect from './13-useeffect/UseEffect'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <UseState />
       <CheckBox />
       <Componente />
+      <UseEffect />
     </div>
   )
 }
