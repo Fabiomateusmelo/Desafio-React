@@ -15,6 +15,7 @@ import UseState from './12-usestate/02-UseState'
 import CheckBox from './12-usestate/03-CheckBox'
 import Componente from './12-usestate/04-ComponentTrees'
 import UseEffect from './13-useeffect/UseEffect'
+import DependencyArray from './13-useeffect/DependencyArray'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <CheckBox />
       <Componente />
       <UseEffect />
+      <DependencyArray />
     </div>
   )
 }

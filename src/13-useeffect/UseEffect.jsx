@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 
-export default function UseEffect () {
+export default function UseEffect() {
   const [name, setName] = useState('Bia')
   useEffect(() => {
-    document.title = `Parabens ${name}`
-  })
+    document.title = `Parabéns ${name}`
+  }, [name])
   return (
     <section>
       <h4>
