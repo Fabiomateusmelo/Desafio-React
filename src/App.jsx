@@ -10,10 +10,10 @@ import PixelArt from './08-pixel-art/PixelArt'
 import SimpleCalculator from './09-simple-calculator/SimpleCalculator'
 import FocusInput from './10-focus-input/FocusInput'
 import ShoppingCart from './11-shopping-cart/ShoppingCart'
-import ObjProps from './12-hooks/01-Desestruturacao'
-import UseState from './12-hooks/02-UseState'
-import CheckBox from './12-hooks/03-CheckBox'
-import Componente from './12-hooks/04-ComponentTrees'
+import ObjProps from './12-usestate/01-Desestruturacao'
+import UseState from './12-usestate/02-UseState'
+import CheckBox from './12-usestate/03-CheckBox'
+import Componente from './12-usestate/04-ComponentTrees'
 
 function App() {
   return (
